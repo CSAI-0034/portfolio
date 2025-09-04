@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { profile } from "../data/profile";
-import avatar from "../assets/profile.jpg";
+  import avatar from "../assets/profile.jpg";
 import { FaGithub, FaLinkedin, FaHackerrank } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
@@ -28,19 +28,22 @@ export default function Home() {
 
           <div className="mt-8 flex gap-4">
             <a
-              href="/src/assets/resume.pdf"
+              href="/resume.pdf"   // ✅ public folder se direct serve hoga
               download
               className="px-6 py-3 rounded-full bg-pink-600 hover:bg-pink-500 transition font-semibold"
             >
               📄 Download Resume
             </a>
             <a
-              href="/resume"
+              href="/resume.pdf"   // ✅ direct file open hogi in new tab
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 transition font-semibold"
             >
               👀 View Resume
             </a>
           </div>
+
 
           {/* Social links */}
           <div className="mt-6 flex gap-6 text-2xl text-gray-400">
