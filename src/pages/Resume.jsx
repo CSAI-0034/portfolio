@@ -5,7 +5,7 @@ export default function Resume() {
     <Section title="Resume" subtitle="View or download my latest resume">
       <div className="mb-6 flex gap-3">
         <a
-          href="/resume.pdf"  // ✅ public folder
+          href="/resume.pdf"  
           download
           className="px-4 py-2 rounded-full bg-pink-600 hover:bg-pink-500 transition"
         >
@@ -20,7 +20,7 @@ export default function Resume() {
       </div>
       <div className="rounded-xl overflow-hidden border border-white/10 bg-white">
         <iframe
-          src="/resume.pdf"  // ✅ public folder
+          src="/resume.pdf"  
           title="Resume"
           className="w-full h-[1000px]"
         />

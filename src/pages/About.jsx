@@ -8,12 +8,12 @@ import { FaInfoCircle, FaGraduationCap, FaTools, FaBriefcase } from "react-icons
 export default function About() {
   return (
     <section className="relative min-h-screen py-16 bg-gradient-to-br from-gray-900 via-black to-gray-950 overflow-hidden">
-      {/* Background glows */}
+      
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-pink-500/20 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-blue-500/20 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 space-y-20">
-        {/* About Me */}
+        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export default function About() {
           </p>
         </motion.div>
 
-        {/* Education */}
+        
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -52,7 +52,7 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Skills */}
+        
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Experience */}
+        
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}

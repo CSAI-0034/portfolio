@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Contact() {
-  const [status, setStatus] = useState(""); // "success" | "error" | ""
+  const [status, setStatus] = useState(""); 
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -40,7 +40,7 @@ export default function Contact() {
     <Section title="Contact Me" subtitle="Let’s build something great together 🚀">
       <div className="grid md:grid-cols-2 gap-8">
         
-        {/* Contact form */}
+        
         <motion.form
           onSubmit={handleSubmit}
           className="rounded-3xl p-6 bg-white/5 backdrop-blur border border-white/10 shadow-xl"
@@ -110,7 +110,7 @@ export default function Contact() {
             </button>
           </div>
 
-          {/* Success/Error message */}
+          
           {status === "success" && (
             <p className="mt-4 text-green-400 font-medium">
               ✅ Thank you! Your message has been sent.
@@ -123,7 +123,7 @@ export default function Contact() {
           )}
         </motion.form>
 
-        {/* Contact details */}
+        
         <motion.div
           className="rounded-3xl p-6 bg-white/5 backdrop-blur border border-white/10 shadow-xl"
           initial={{ opacity: 0, x: 40 }}
